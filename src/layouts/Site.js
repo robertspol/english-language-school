@@ -13,8 +13,8 @@ function Site() {
     return (
         <>
             <Routes>
-                <Route path="/english-language-school" component={HomePage} />
                 <Route path="/" exact element={<HomePage/>} />
+                <Route path="/english-language-school" element={<HomePage/>} />
                 <Route path="/glossary" element={<Glossary/>} />
                 <Route path="/gallery" element={<Gallery/>} />
                 <Route path="/contact" element={<Contact/>} />
