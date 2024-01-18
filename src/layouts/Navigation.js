@@ -11,7 +11,7 @@ const list = [
 function Navigation() {
     const menu = list.map(link => (
         <li key={link.name} className="menu__item">
-            <NavLink to={link.path} className="menu__link" activeClassName="active">{link.name}</NavLink>
+            <NavLink to={link.path} className="menu__link">{link.name}</NavLink>
         </li>
     ));
 
