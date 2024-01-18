@@ -1,0 +1,112 @@
+.subpageWrapper {
+    height: 100%;
+    padding-top: 2vh;
+
+    &--finances {
+        height: 70vh;
+        
+        @include mq(xxsmall-landscape) {
+            display: flex;
+        }
+    }
+
+    &__imgContainer {
+        width: 100%;
+        height: 40%;
+
+        @include mq (xxsmall-landscape) {
+            width: 90%;
+        }
+
+        & img {
+            display: block;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            border-radius: 15%;
+
+            @include mq(xxsmall-landscape) {
+                width: 40%;
+                height: 100%;
+                margin: 0 0 0 5%;
+            }
+        }
+    }
+
+    &__imgContainer &__financesImg {
+        @include mq(xxsmall-landscape) {
+            height: 60vh;
+            width: 60vh;
+        }
+    }
+
+    &__imgContainer &__homeLearningImg {
+        @include mq(xxsmall-landscape) {
+            margin: 0 10% 0 auto;
+        }
+
+        @include mq(xlarge-landscape) {
+            width: 40%;
+        }
+    }
+
+    &__imgContainer--finances {
+        @include mq(xxsmall-landscape) {
+            width: 40vw;
+        }
+    }
+
+    &__text {
+        margin-top: 2vh;
+        font-size: 1.2rem;
+        line-height: 150%;
+
+        @include mq(xxsmall-landscape) {
+           margin-left: 50%;
+           font-size: 1.4rem;
+        }
+
+        @include mq(small-landscape) {
+            font-size: 1.5rem;
+        }
+        
+        &.subpageWrapper__text--home {
+            @include mq(xxsmall-landscape) {
+                margin: 0 40% 0 10%;
+                padding-top: 6vh;
+            }
+    
+            @include mq(small-landscape) {
+                font-size: 1.3rem;
+            }
+        }  
+
+        &.subpageWrapper__text--certificate {
+            font-size: 1.1rem;
+    
+            @include mq(xxsmall-landscape) {
+                font-size: 1.3rem;
+            }
+    
+            @include mq(small-landscape) {
+                font-size: 1.3rem;
+            }        
+        }
+    }
+  
+    .textContainer {
+        @include mq(xxsmall-landscape) {
+            width: 50%;
+            margin-top: 10vh;
+            font-size: 1.2rem;
+
+            @include mq(small-landscape) {
+                font-size: 1.2rem;
+            }
+         }
+
+         & h1 {
+             margin: 5vh 0 .5vh 0;
+         }
+    }
+}

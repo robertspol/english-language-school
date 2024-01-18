@@ -1,0 +1,154 @@
+.glossary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1vh;
+
+    @include mq(xxsmall-landscape) {
+        justify-content: flex-start;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .5vh;
+        font-size: .7rem;
+        text-align: center;
+
+        &:nth-child(-n+6) {
+            display: none;
+        }
+
+        @include mq(xxsmall-landscape) {
+            width: 20%;
+            margin-bottom: 1vh;
+            font-size: 1.2rem;
+
+            &:nth-child(-n+6) {
+                display: flex;
+            }
+        }
+
+        @include mq(xsmall-landscape) {
+            font-size: 1rem;
+        }
+
+        @include mq(small-landscape) {
+            width: 25%;
+        }
+
+        @include mq(large-landscape) {
+            width: 25%;
+            font-size: .8rem;
+        }
+
+        .glossary__words {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .glossary__translationWrapper {
+            padding: 0 1vw;
+            border: 2px solid #fff;
+            text-align: center;
+
+            .glossary__translation {
+                opacity: 0;
+                font-weight: bold;
+
+                &--visible {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .glossary__button {
+            width: 38vw;
+            font-size: .7rem;
+            transition: .1s;
+            cursor: pointer;
+
+            @media(any-hover: hover) {
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+
+
+            @include mq(xxsmall) {
+                width: 33vw;
+            }
+
+            @include mq(xxsmall-landscape) {
+                width: 15vw;
+            }
+
+            @include mq(small) {
+                width: 23vw;
+                font-size: .8rem;
+            }
+
+            @include mq(small-landscape) {
+                width: 14vw;
+            }
+
+            @include mq(medium-landscape) {
+                width: 10vw;
+            }
+
+            @include mq(large) {
+                width: 25vw;
+            }
+
+            @include mq(large-landscape) {
+                width: 15vw;
+            }
+
+            @include mq(xlarge-landscape) {
+                width: 13vw;
+            }
+        }
+    }
+}
+
+.buttonsWrapper {
+    margin-top: 1vh;
+    text-align: center;
+
+    &__showAll,
+    &__reset {
+        margin-right: 1vw;
+        padding: 0 .5vw;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    @media (any-hover: hover) {
+
+        &__showAll:hover,
+        &__reset:hover {
+            cursor: pointer;
+        }
+
+        &__showAll:hover {
+            background-color: #0c0;
+        }
+
+        &__reset:hover {
+            background-color: #f00;
+        }
+    }
+
+    &__showAll {
+        background-color: #090;
+    }
+
+    &__reset {
+        background-color: #c00;
+    }
+
+
+}

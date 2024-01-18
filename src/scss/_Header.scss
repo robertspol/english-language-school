@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+
+    @include mq(xsmall) {
+        height: 20vh;
+    }
+
+    @include mq(small) {
+        height: 17vh;
+    }
+
+    &__img-flag {
+        height: 100%;
+    }
+
+    &__name {
+        margin-left: 1vh;
+        color: #f00;
+        font-family: Butcherman;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+
+        @include mq(xxsmall-landscape) {
+            font-size: 4rem;
+        }
+
+        @include mq(xsmall) {
+            font-size: 2.2rem;
+        }
+
+        @include mq(small) {
+            font-size: 2rem;
+        }
+
+        @include mq(small-landscape) {
+            font-size: 3rem;
+        }
+
+        @include mq(medium-landscape) {
+            flex-basis: 48vw;
+            font-size: 4rem;
+        }
+
+        @include mq(large-landscape) {
+            font-size: 3rem;
+        }
+
+        @include mq(xlarge-landscape) {
+            font-size: 3rem;
+        }
+
+        & span {
+            color: #fff;
+        }
+    }
+}

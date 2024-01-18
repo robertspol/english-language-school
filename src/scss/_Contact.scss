@@ -1,0 +1,61 @@
+.contact {
+    height: 100%;
+
+    &__head {
+        position: absolute;
+        top: 35vh;
+        font-size: 1.5rem;
+        text-shadow: 3px 3px 3px  #f00;
+        text-align: center;
+        transition: .3s;
+
+        @include mq(xxsmall) {
+            font-size: 1.7rem;
+        }
+
+        @include mq(small) {
+            font-size: 2.5rem;
+        }
+
+        @include mq(small-landscape) {
+            font-size: 3rem;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 55vh;
+        font-size: 1.2rem;
+        text-shadow: 3px 3px 3px #00f;
+        transition: .3s;
+
+        @include mq(xxsmall) {
+            font-size: 1.2rem;
+        }
+
+        @include mq(xxsmall-landscape) {
+            font-size: 2rem;
+        }
+
+        @include mq(small) {
+            top: 55vh;
+        }
+    }
+
+    &__mail {
+        position: absolute;
+        top: 80vh;
+        color: #fff;
+        text-shadow: 3px 3px 3px  #0f0;
+        text-decoration: none;
+        transition: .3s;
+
+        @include mq(xxsmall) {
+            font-size: 1.2rem;
+        }
+
+        @include mq(xxsmall-landscape) {
+            font-size: 2rem;
+        }
+    }
+}
