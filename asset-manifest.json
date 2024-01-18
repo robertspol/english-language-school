@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/english-language-school/static/css/main.30350abf.css",
-    "main.js": "/english-language-school/static/js/main.723b8f74.js",
+    "main.js": "/english-language-school/static/js/main.c9c8aa75.js",
     "static/js/787.7d1ca70b.chunk.js": "/english-language-school/static/js/787.7d1ca70b.chunk.js",
     "static/media/wembley_1280.jpg": "/english-language-school/static/media/wembley_1280.8fb70721fc2e7051dbec.jpg",
     "static/media/BungeeShade-Regular.ttf": "/english-language-school/static/media/BungeeShade-Regular.37f52faa1acf33b41e2e.ttf",
@@ -27,11 +27,11 @@
     "static/media/english-flag.png": "/english-language-school/static/media/english-flag.a4694e584893596e12fe.png",
     "index.html": "/english-language-school/index.html",
     "main.30350abf.css.map": "/english-language-school/static/css/main.30350abf.css.map",
-    "main.723b8f74.js.map": "/english-language-school/static/js/main.723b8f74.js.map",
+    "main.c9c8aa75.js.map": "/english-language-school/static/js/main.c9c8aa75.js.map",
     "787.7d1ca70b.chunk.js.map": "/english-language-school/static/js/787.7d1ca70b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30350abf.css",
-    "static/js/main.723b8f74.js"
+    "static/js/main.c9c8aa75.js"
   ]
 }
